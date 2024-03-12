@@ -1,0 +1,517 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+header {
+  padding: 0 5%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px 0; */
+}
+
+.logo-container {
+  width: 300px;
+}
+.logo-container img {
+  width: 100%;
+}
+/* ! Search Container */
+nav {
+  .search-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: end;
+    vertical-align: middle;
+  }
+
+  .search-container input {
+    width: 50%;
+    background-color: #f0f2f1;
+    border: none;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  .search-container input::placeholder {
+    color: #ef5b33;
+    opacity: 0.6;
+  }
+
+  .search-container ion-icon {
+    color: #ef5b33;
+    font-size: 25px;
+    margin-left: -40px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+}
+
+/* ! Nav Container */
+nav {
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+  }
+
+  .nav-container li a {
+    background-color: #ef5b33;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-container li a ion-icon,
+  .nav-container li a i {
+    color: white;
+    font-size: 25px;
+  }
+
+  .nav-container li a i.fa-facebook-messenger {
+    font-size: 40px;
+    border-radius: 0;
+    color: #ef5b33;
+    background-color: white;
+  }
+}
+
+main {
+  padding: 0 5%;
+}
+
+.banner-carousel {
+  width: 100%;
+  height: 400px;
+  transition: ease-in-out 0.3s;
+}
+
+.banner-carousel img {
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%, 10%);
+}
+
+/* ? Category Start Hear */
+.slide-category-container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slide-category {
+  width: 100%;
+}
+.category-img-container {
+  width: 150px;
+  height: 150px;
+  background-color: #fdeee9;
+  border: 2px solid #ee5c35;
+  border-radius: 50%;
+  padding: 10px;
+  margin: auto;
+}
+.category-img-container img {
+  width: 100%;
+  height: 100%;
+  /* width: 150px;
+  height: 150px; */
+  border-radius: 50%;
+}
+.slide-category h3 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 15px 2px 0 2px;
+}
+/* ? Category End Hear */
+
+/* ! Grocery Start Here */
+.groceryContainer,
+.boiContainer,
+.showPiceContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.titleLeft {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.titleLeft img {
+  width: 80px;
+}
+.titleLeft h3 {
+  font-size: 20px;
+  margin-top: auto;
+  padding: 5px 0;
+}
+.extend {
+  color: #ee5c35;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: auto;
+  /* margin-bottom: 10px; */
+  padding: 5px 15px;
+  border-radius: 8px;
+}
+.extend:hover {
+  background-color: #ef5b33;
+  color: #fff;
+}
+
+.hr {
+  width: 100%;
+  height: 2px;
+  background-color: #ee5c35;
+}
+
+/* !container */
+
+.groceryProdsContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 27px;
+  row-gap: 30px;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+
+.productCard {
+  display: none;
+  flex-direction: column;
+  width: 15%;
+  padding: 0;
+}
+.productCard cardFirst {
+  background-color: #f0f2f1;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid #00000030;
+}
+.productCard cardFirst ImageContainer {
+  width: 100%;
+}
+.productCard cardFirst ImageContainer img {
+  width: 100%;
+}
+.productCard cardFirst ProductInfo {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.productCard btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+.productCard btnContainer button,
+.productCard btnContainer a {
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: #ee5c35;
+  color: #fff;
+}
+/* ! Grocery End Here */
+
+/* todo Footer Start */
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.footerTopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.footerTopContainer mainFooterTitle {
+  font-size: 50px;
+  font-weight: 600;
+  color: #ef5b33;
+}
+.footerContactTop {
+  margin: 20px 0 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 550px;
+}
+
+.footerContactTop a:not(:last-child) {
+  width: 80px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.footerTopContainer contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 0;
+  background-color: #ef5b33;
+  width: 100%;
+}
+
+.footerTopContainer contactContainer a {
+  width: 80px;
+
+  img {
+    width: 100%;
+  }
+}
+footer .lastFooter {
+  color: #ee5c35;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+/* todo Footer End */
+
+/*! Styles for screens smaller than or equal to 600px */
+@media (max-width: 450px) {
+  header {
+    padding: 0 0;
+  }
+  main {
+    padding: 0 0;
+  }
+  .banner-carousel {
+    height: 200px;
+  }
+  .slide-category-container {
+    gap: 5px;
+  }
+  .slide-category h3 {
+    font-size: 10px;
+  }
+  .category-img-container {
+    width: 35px;
+    height: 35px;
+  }
+  .groceryProdsContainer {
+    gap: 0;
+    row-gap: 30px;
+    justify-content: space-between;
+  }
+  .productCard {
+    width: 48%;
+  }
+  .productCard btnContainer button,
+  .productCard btnContainer a {
+    padding: 5px 6px;
+    font-size: 16px;
+  }
+  .footerTopContainer mainFooterTitle {
+    font-size: 30px;
+    text-wrap: wrap;
+    text-align: center;
+  }
+  .footerContactTop {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footerTopContainer contactContainer {
+    margin: 0 10px;
+  }
+}
+
+/*! Styles for screens smaller than or equal to 600px */
+@media (min-width: 451px) and (max-width: 640px) {
+  header {
+    padding: 0 0;
+  }
+  main {
+    padding: 0 0;
+  }
+  .banner-carousel {
+    height: 250px;
+  }
+  .slide-category-container {
+    gap: 5px;
+  }
+  .slide-category h3 {
+    font-size: 10px;
+  }
+  .category-img-container {
+    width: 45px;
+    height: 45px;
+  }
+  .groceryProdsContainer {
+    gap: 0;
+    row-gap: 30px;
+    justify-content: space-between;
+  }
+  .productCard {
+    width: 48%;
+  }
+  .productCard btnContainer button,
+  .productCard btnContainer a {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  .footerTopContainer mainFooterTitle {
+    font-size: 30px;
+    text-wrap: wrap;
+    text-align: center;
+  }
+  .footerContactTop {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/*! Styles for screens between 601px and 900px md */
+@media (min-width: 641px) and (max-width: 768px) {
+  .banner-carousel {
+    height: 300px;
+  }
+  .slide-category-container {
+    gap: 10px;
+  }
+  .slide-category h3 {
+    font-size: 14px;
+  }
+  .category-img-container {
+    width: 65px;
+    height: 65px;
+  }
+  .groceryProdsContainer {
+    gap: 0;
+    row-gap: 30px;
+    justify-content: space-between;
+  }
+  .productCard {
+    width: 30%;
+  }
+  .productCard btnContainer button,
+  .productCard btnContainer a {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .footerTopContainer mainFooterTitle {
+    font-size: 30px;
+  }
+  .footerContactTop {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/*! Styles for screens between 601px and 900px md */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .slide-category h3 {
+    font-size: 14px;
+  }
+  .category-img-container {
+    width: 80px;
+    height: 80px;
+  }
+  .groceryProdsContainer {
+    gap: 0;
+    row-gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .productCard {
+    width: 24%;
+  }
+  .productCard btnContainer button,
+  .productCard btnContainer a {
+    padding: 5px 15px;
+    font-size: 10px;
+  }
+  .footerTopContainer mainFooterTitle {
+    font-size: 40px;
+  }
+}
+
+/*! Styles for screens larger than 900px  lg */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .category-img-container {
+    width: 100px;
+    height: 100px;
+  }
+  .groceryProdsContainer {
+    gap: 0;
+    row-gap: 30px;
+    justify-content: space-between;
+  }
+  .productCard {
+    width: 19%;
+  }
+  .productCard btnContainer button,
+  .productCard btnContainer a {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1280px) {
+}
