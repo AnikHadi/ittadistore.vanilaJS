@@ -335,17 +335,21 @@ footer .lastFooter {
     padding: 5px 6px;
     font-size: 16px;
   }
-  .footerTopContainer mainFooterTitle {
-    font-size: 30px;
-    text-wrap: wrap;
-    text-align: center;
-  }
   .footerContactTop {
     width: 100%;
     flex-direction: column;
   }
   .footerTopContainer contactContainer {
+    gap: 20px;
+  }
+  .footerTopContainer contactContainer a {
     margin: 0 10px;
+    width: 50px;
+  }
+  .footerTopContainer mainFooterTitle {
+    font-size: 30px;
+    text-wrap: wrap;
+    text-align: center;
   }
 }
 
@@ -408,6 +412,13 @@ footer .lastFooter {
   .footerContactTop {
     width: 100%;
     flex-direction: column;
+  }
+  .footerTopContainer contactContainer {
+    gap: 30px;
+  }
+  .footerTopContainer contactContainer a {
+    margin: 0 10px;
+    width: 60px;
   }
 }
 
