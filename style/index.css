@@ -330,6 +330,7 @@ footer .lastFooter {
   font-size: 20px;
   font-weight: 600;
   padding: 10px 0;
+  text-align: center;
 }
 /* todo Footer End */
 
@@ -364,18 +365,15 @@ footer .lastFooter {
   }
   .slide-category-container {
     gap: 5px;
-    flex-wrap: wrap;
-    row-gap: 20px;
-  }
-  .slide-category {
-    width: 30%;
+    /* flex-wrap: wrap; */
   }
   .slide-category h3 {
-    font-size: 16px;
+    width: 50px;
+    font-size: 10px;
   }
   .category-img-container {
-    width: 90px;
-    height: 90px;
+    width: 30px;
+    height: 30px;
   }
   .groceryProdsContainer {
     gap: 0;
@@ -385,17 +383,21 @@ footer .lastFooter {
   .productCard {
     width: 48%;
   }
-  .footerTopContainer mainFooterTitle {
-    font-size: 30px;
-    text-wrap: wrap;
-    text-align: center;
-  }
   .footerContactTop {
     width: 100%;
     flex-direction: column;
   }
   .footerTopContainer contactContainer {
+    gap: 20px;
+  }
+  .footerTopContainer contactContainer a {
     margin: 0 10px;
+    width: 50px;
+  }
+  .footerTopContainer mainFooterTitle {
+    font-size: 30px;
+    text-wrap: wrap;
+    text-align: center;
   }
 }
 
@@ -442,6 +444,13 @@ footer .lastFooter {
   .footerContactTop {
     width: 100%;
     flex-direction: column;
+  }
+  .footerTopContainer contactContainer {
+    gap: 30px;
+  }
+  .footerTopContainer contactContainer a {
+    margin: 0 10px;
+    width: 60px;
   }
 }
 
