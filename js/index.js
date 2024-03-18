@@ -10,21 +10,21 @@ const $ = (className) => {
 const sliderTime = 3000;
 const categoryTime = 5000;
 
-// ! Search BTN starts here
-const searchBtn = $("#searchBtn");
-const searchInput = $("#searchInput");
+// // ! Search BTN starts here
+// const searchBtn = $("#searchBtn");
+// const searchInput = $("#searchInput");
 
-searchBtn.addEventListener("click", () => {
-  console.log("clicked :" + searchInput.value);
-  searchInput.value = "";
-});
-searchInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    console.log("value: " + e.target.value);
-    searchInput.value = "";
-  }
-});
-// ! Search BTN End here
+// searchBtn.addEventListener("click", () => {
+//   console.log("clicked :" + searchInput.value);
+//   searchInput.value = "";
+// });
+// searchInput.addEventListener("keydown", (e) => {
+//   if (e.key === "Enter") {
+//     console.log("value: " + e.target.value);
+//     searchInput.value = "";
+//   }
+// });
+// // ! Search BTN End here
 
 // ! Slider starts here
 let sliderFIndex = 0;

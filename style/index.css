@@ -56,7 +56,7 @@ nav {
     vertical-align: middle;
   }
 
-  .search-container input {
+  /* .search-container input {
     width: 50%;
     background-color: #f0f2f1;
     border: none;
@@ -78,7 +78,7 @@ nav {
     margin-left: -40px;
     margin-bottom: 5px;
     cursor: pointer;
-  }
+  } */
 }
 
 /* ! Nav Container */
@@ -255,17 +255,15 @@ main {
 }
 
 .productCard btnContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   column-gap: 10px;
   margin-top: 10px;
 }
-.productCard btnContainer button,
 .productCard btnContainer a {
   padding: 5px;
-  /* padding: 5px 15px; */
+  width: 100%;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 20px;
   border-radius: 3px;
   background-color: #e525a1;
   color: #fff;
@@ -353,26 +351,31 @@ footer .lastFooter {
     .nav-container li a i.fa-facebook-messenger {
       font-size: 25px;
     }
-    .search-container ion-icon {
-      font-size: 20px;
-      margin-left: -20px;
-    }
   }
   main {
     padding: 0 0;
   }
+  .productParentContainer {
+    padding: 0 1%;
+  }
+
   .banner-carousel {
     height: 200px;
   }
   .slide-category-container {
     gap: 5px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .slide-category {
+    width: 30%;
   }
   .slide-category h3 {
-    font-size: 10px;
+    font-size: 16px;
   }
   .category-img-container {
-    width: 35px;
-    height: 35px;
+    width: 90px;
+    height: 90px;
   }
   .groceryProdsContainer {
     gap: 0;
@@ -381,11 +384,6 @@ footer .lastFooter {
   }
   .productCard {
     width: 48%;
-  }
-  .productCard btnContainer button,
-  .productCard btnContainer a {
-    padding: 5px 6px;
-    font-size: 16px;
   }
   .footerTopContainer mainFooterTitle {
     font-size: 30px;
@@ -406,31 +404,17 @@ footer .lastFooter {
   header {
     padding: 0 0;
   }
-  nav {
-    .nav-container li a {
-      width: 30px;
-      height: 30px;
-    }
 
-    .nav-container li a ion-icon,
-    .nav-container li a i {
-      font-size: 20px;
-    }
-    .nav-container li a i.fa-facebook-messenger {
-      font-size: 30px;
-    }
-
-    .search-container ion-icon {
-      font-size: 20px;
-      margin-left: -20px;
-    }
-  }
   main {
     padding: 0 0;
+  }
+  .productParentContainer {
+    padding: 0 2%;
   }
   .banner-carousel {
     height: 250px;
   }
+
   .slide-category-container {
     gap: 5px;
   }
@@ -449,11 +433,7 @@ footer .lastFooter {
   .productCard {
     width: 48%;
   }
-  .productCard btnContainer button,
-  .productCard btnContainer a {
-    padding: 5px 10px;
-    font-size: 16px;
-  }
+
   .footerTopContainer mainFooterTitle {
     font-size: 30px;
     text-wrap: wrap;
@@ -477,8 +457,8 @@ footer .lastFooter {
     font-size: 14px;
   }
   .category-img-container {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
   }
   .groceryProdsContainer {
     gap: 0;
@@ -488,11 +468,7 @@ footer .lastFooter {
   .productCard {
     width: 30%;
   }
-  .productCard btnContainer button,
-  .productCard btnContainer a {
-    padding: 5px 10px;
-    font-size: 12px;
-  }
+
   .footerTopContainer mainFooterTitle {
     font-size: 30px;
   }
@@ -508,8 +484,8 @@ footer .lastFooter {
     font-size: 14px;
   }
   .category-img-container {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
   }
   .groceryProdsContainer {
     gap: 0;
@@ -520,11 +496,7 @@ footer .lastFooter {
   .productCard {
     width: 24%;
   }
-  .productCard btnContainer button,
-  .productCard btnContainer a {
-    padding: 5px 15px;
-    font-size: 10px;
-  }
+
   .footerTopContainer mainFooterTitle {
     font-size: 40px;
   }
@@ -543,11 +515,6 @@ footer .lastFooter {
   }
   .productCard {
     width: 19%;
-  }
-  .productCard btnContainer button,
-  .productCard btnContainer a {
-    padding: 5px 12px;
-    font-size: 12px;
   }
 }
 

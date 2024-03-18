@@ -56,7 +56,7 @@ nav {
     vertical-align: middle;
   }
 
-  .search-container input {
+  /* .search-container input {
     width: 50%;
     background-color: #f0f2f1;
     border: none;
@@ -78,7 +78,7 @@ nav {
     margin-left: -40px;
     margin-bottom: 5px;
     cursor: pointer;
-  }
+  } */
 }
 
 /* ! Nav Container */
@@ -285,10 +285,6 @@ footer .lastFooter {
     .nav-container li a i.fa-facebook-messenger {
       font-size: 25px;
     }
-    .search-container ion-icon {
-      font-size: 20px;
-      margin-left: -20px;
-    }
   }
   main {
     padding: 0 0;
@@ -354,25 +350,6 @@ footer .lastFooter {
 @media (min-width: 451px) and (max-width: 640px) {
   header {
     padding: 0 0;
-  }
-  nav {
-    .nav-container li a {
-      width: 30px;
-      height: 30px;
-    }
-
-    .nav-container li a ion-icon,
-    .nav-container li a i {
-      font-size: 20px;
-    }
-    .nav-container li a i.fa-facebook-messenger {
-      font-size: 30px;
-    }
-
-    .search-container ion-icon {
-      font-size: 20px;
-      margin-left: -20px;
-    }
   }
   main {
     padding: 0 0;
