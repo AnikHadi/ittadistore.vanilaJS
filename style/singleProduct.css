@@ -307,6 +307,9 @@ footer .lastFooter {
     row-gap: 30px;
     justify-content: space-between;
   }
+  .productDetails {
+    padding: 0 1%;
+  }
   .product-details-container {
     flex-direction: column;
     align-items: center;
@@ -371,6 +374,9 @@ footer .lastFooter {
     gap: 0;
     row-gap: 30px;
     justify-content: space-between;
+  }
+  .productDetails {
+    padding: 0 2%;
   }
   .product-details-container {
     flex-direction: column;
